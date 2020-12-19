@@ -27,6 +27,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.container {
+  max-width: $container;
+  margin: 0 auto;
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-white;
