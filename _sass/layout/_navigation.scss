@@ -1,0 +1,54 @@
+.navigation {
+  padding-top: 4.5rem;
+  background-color: $color-white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__person {
+    display: flex;
+  }
+
+  &__person-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__person-image {
+    background-image: url("/assets/img/profile.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__person-name {
+    font-size: $small-font-size;
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__person-role {
+    font-size: $small-font-size;
+    font-weight: 200;
+    color: $color-gray;
+  }
+
+  &__items {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 3.5rem;
+    font-size: $small-font-size;
+    font-weight: 700;
+    color: $color-primary;
+  }
+}

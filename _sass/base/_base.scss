@@ -25,9 +25,19 @@ html {
 body {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  min-height: 200vh;
 }
 
-.container {
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+[class$="container"] {
   max-width: $container;
   margin: 0 auto;
 }
@@ -35,4 +45,13 @@ body {
 ::selection {
   background-color: $color-primary;
   color: $color-white;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+  background-color: $color-white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
 }
