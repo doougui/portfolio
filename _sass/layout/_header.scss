@@ -1,6 +1,8 @@
 .header {
   height: 100vh;
   z-index: 9;
+  background-color: $color-white;
+  position: relative;
 
   &__container {
     height: 100%;
