@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
 
   &__description {
@@ -25,5 +26,37 @@
 
   &__img {
     width: 56.2rem;
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 2rem;
+    right: 12rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 400rem;
+      height: .1rem;
+      background-color: $color-gray-light;
+      margin-right: 4rem;
+    }
+
+    &-item {
+      padding: 0 1rem;
+    }
+
+    &-img {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: $color-gray;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
   }
 }
