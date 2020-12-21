@@ -1,3 +1,6 @@
+/**
+ * Resets
+ */
 *,
 *::after,
 *::before {
@@ -6,6 +9,9 @@
   box-sizing: inherit;
 }
 
+/**
+ * Resizing font depending on screen width
+ */
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
 
@@ -22,12 +28,18 @@ html {
   }
 }
 
+/**
+ * Body resets
+ */
 body {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  min-height: 200vh;
+  min-height: 200vh; // tests purposes only
 }
 
+/**
+ * Link reset
+ */
 a {
   &,
   &:link,
@@ -37,16 +49,26 @@ a {
   }
 }
 
+/**
+ * Apply this style in every class that ENDS with "container"
+ * For example: .card__container
+ */
 [class$="container"] {
   max-width: $container;
   margin: 0 auto;
 }
 
+/**
+ * Changing colors for text selection
+ */
 ::selection {
   background-color: $color-primary;
   color: $color-white;
 }
 
+/**
+ * Changing scrollbar style on supported browsers
+ */
 ::-webkit-scrollbar {
   width: .7rem;
   background-color: $color-white;

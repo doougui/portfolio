@@ -1,0 +1,27 @@
+/**
+ * Here we apply the transform property in a child element to avoid the glitchy effect when hovering
+ * See more in: https://twitter.com/JoshWComeau/status/1339696520388628483
+ */
+.button {
+  & &__aesthetic,
+  &:link &__aesthetic,
+  &:visited &__aesthetic {
+    color: $color-white;
+    font-size: $small-font-size;
+    background-color: $color-primary;
+    padding: .7rem 2.4rem;
+    border-radius: $btn-radius;
+    box-shadow: $btn-shadow;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    display: inline-block;
+  }
+
+  &:hover &__aesthetic,
+  &:focus &__aesthetic {
+    transform: translateY(-.2rem);
+    box-shadow: 0 .1.5rem .25rem rgba($color-black, .2);
+  }
+}
