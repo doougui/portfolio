@@ -1,16 +1,48 @@
-<header>
-  {% comment %}
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<header class="header" id="section-header">
+  <div class="header__container">
+    <div class="header__info">
+      <h1 class="heading-primary">Full-stack Developer</h1>
+      <p class="header__description paragraph paragraph--big">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Aenean convallis magna
+        eget mi ultrices egestas. Integer fringilla a
+        est a interdum.
+      </p>
 
-    {%- if page_paths -%}
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-    {%- endif -%}
-  {% endcomment %}
+      <div class="header__buttons">
+        <a href="#section-projects" class="button">
+          <span class="button__aesthetic button__aesthetic--outline">
+            Projetos
+          </span>
+        </a>
+        <a href="#section-contact" class="button">
+          <span class="button__aesthetic">
+            Entre em contato
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header__imgs">
+      <img src="/assets/img/header.svg" alt="I build cool stuff" class="header__img">
+    </div>
+  </div>
+
+  <ul class="header__social">
+    <li class="header__social-item">
+      <a href="https://github.com/doougui" target="_blank" rel="noopener" class="header__social-link">
+        <i class="fab fa-github header__social-img"></i>
+      </a>
+    </li>
+    <li class="header__social-item">
+      <a href="https://www.linkedin.com/in/douglaspigoulart" target="_blank" rel="noopener" class="header__social-link">
+        <i class="fab fa-linkedin header__social-img"></i>
+      </a>
+    </li>
+    <li class="header__social-item">
+      <a href="https://www.instagram.com/devtype_code" target="_blank" rel="noopener" class="header__social-link">
+        <i class="fab fa-instagram header__social-img"></i>
+      </a>
+    </li>
+  </ul>
 </header>
