@@ -1,6 +1,9 @@
 .navigation {
   padding-top: 4.5rem;
   background-color: $color-white;
+  position: fixed;
+  width: 100%;
+  transition: all .2s;
 
   &__container {
     display: flex;
@@ -24,8 +27,8 @@
     background-image: url("/assets/img/profile.jpeg");
     background-size: cover;
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   &__person-name {
@@ -50,5 +53,10 @@
     font-size: $small-font-size;
     font-weight: 700;
     color: $color-primary;
+  }
+
+  &--small {
+    padding: 1rem;
+    box-shadow: $header-shadow;
   }
 }
