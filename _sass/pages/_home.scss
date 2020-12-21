@@ -1,0 +1,9 @@
+.projects {
+  &__filters {
+    text-align: center;
+
+    .button:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
