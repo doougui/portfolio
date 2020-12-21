@@ -3,7 +3,7 @@
  * See more in: https://twitter.com/JoshWComeau/status/1339696520388628483
  */
 .button {
-  & &__aesthetic,
+  &__aesthetic,
   &:link &__aesthetic,
   &:visited &__aesthetic {
     color: $color-white;

@@ -70,4 +70,24 @@
     display: flex;
     align-items: center;
   }
+
+  &__link {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: .2rem;
+      background-color: currentColor;
+      transition: all .2s;
+      position: absolute;
+      right: 0;
+    }
+
+    &:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
 }
