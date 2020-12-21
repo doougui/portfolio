@@ -1,0 +1,27 @@
+.header {
+  height: 100vh;
+  z-index: 9;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    max-width: 47rem;
+  }
+
+  &__buttons {
+    margin-top: 3rem;
+
+    a:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__img {
+    width: 56.2rem;
+  }
+}

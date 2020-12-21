@@ -1,4 +1,33 @@
-<header>
+<header class="header">
+  <div class="header__container">
+    <div class="header__info">
+      <h1 class="heading-primary">Full-stack Developer</h1>
+      <p class="header__description paragraph paragraph--big">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Aenean convallis magna
+        eget mi ultrices egestas. Integer fringilla a
+        est a interdum.
+      </p>
+
+      <div class="header__buttons">
+        <a href="#section-projects" class="button">
+          <span class="button__aesthetic button__aesthetic--outline">
+            Projetos
+          </span>
+        </a>
+        <a href="#section-contact" class="button">
+          <span class="button__aesthetic">
+            Entre em contato
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header__imgs">
+      <img src="/assets/img/header.svg" alt="I build cool stuff" class="header__img">
+    </div>
+  </div>
+
   {% comment %}
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}

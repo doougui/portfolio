@@ -4,4 +4,16 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $color-secondary;
+
+  &--big {
+    font-size: $big-font-size;
+  }
+}
+
+.heading-primary {
+  font-size: $title-font-size;
+  color: $color-primary;
+  font-weight: 700;
 }
