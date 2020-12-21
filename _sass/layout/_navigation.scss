@@ -1,0 +1,93 @@
+.navigation {
+  padding-top: 4.5rem;
+  background-color: $color-white;
+  position: fixed;
+  width: 100%;
+  transition: all .2s;
+
+  /**
+   * Applied on scroll
+   */
+  &--small {
+    padding: 1rem;
+    box-shadow: $header-shadow;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  /*
+   * Person's photo, name and role located in the left part of the menu
+   */
+  &__person {
+    display: flex;
+  }
+
+  &__person-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__person-image {
+    background-image: url("/assets/img/profile.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__person-name {
+    font-size: $small-font-size;
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__person-role {
+    font-size: $small-font-size;
+    font-weight: 400;
+    color: $color-gray;
+  }
+
+  /**
+   * Menu's navigation
+   */
+  &__items {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 3.5rem;
+    font-size: $small-font-size;
+    font-weight: 700;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: .2rem;
+      background-color: currentColor;
+      transition: all .2s;
+      position: absolute;
+      right: 0;
+    }
+
+    &:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
