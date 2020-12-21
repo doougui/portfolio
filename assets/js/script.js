@@ -1,6 +1,12 @@
+/**
+ * Helpers
+ */
 const $ = element => document.querySelector(element);
 const $l = element => document.querySelectorAll(element);
 
+/**
+ * Navigation menu
+ */
 const navElement = $('.navigation');
 
 function setMenuPosition() {
@@ -15,6 +21,9 @@ function setMenuPosition() {
   });
 }
 
+/**
+ * Projects section
+ */
 const projectFilters = $l('button[data-filter]');
 
 function addOutlineClass() {

@@ -1,9 +1,16 @@
 .projects {
   &__filters {
     text-align: center;
+    margin-bottom: 2.5rem;
 
     .button:not(:last-child) {
       margin-right: 1.5rem;
     }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
