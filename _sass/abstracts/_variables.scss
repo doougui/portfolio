@@ -1,4 +1,6 @@
-// Colors
+/**
+ * Colors
+ */
 $color-primary: #107BEB;
 $color-secondary: #3F3D56;
 
@@ -9,13 +11,21 @@ $color-gray-dark: #A0A0A0;
 $color-black: #000000;
 $color-white: #FFFFFF;
 
-// Container
+
+/**
+ * Container
+ */
 $container: 111.6rem;
 
-// Shadows
-$btn-shadow: 0 .2rem .3rem rgba($color-black, .25);
+/**
+ * Shadows
+ */
+$header-shadow: 0 .2rem .5rem rgba($color-black, .2);
+$btn-shadow: 0 .2rem .5rem rgba($color-black, .2);
 
-// Border radius
+/**
+ * Border Radius
+ */
 $btn-radius: .7rem;
 $input-radius: .7rem;
 
@@ -24,8 +34,11 @@ $client-radius: 1.5rem;
 
 $about-me-picture-radius: 5rem 0 0 5rem;
 
-// Fonts
-$small-font-size: 1.6rem;
+/**
+ * Fonts
+ */
+$small-font-size: 1.4rem;
+$normal-font-size: 1.6rem;
 $default-font-size: 1.8rem;
 $big-font-size: 2.4rem;
 
@@ -34,5 +47,7 @@ $subtitle-font-size: 3.6rem;
 
 $default-line-height: 1.5;
 
-// Icons
+/**
+ * Icons
+ */
 $icon-size: 10rem;
