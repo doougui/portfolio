@@ -17,3 +17,21 @@ body {
   color: $color-primary;
   font-weight: 700;
 }
+
+.heading-secondary {
+  text-align: center;
+  color: $color-secondary;
+  font-size: $subtitle-font-size;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 5rem 0;
+
+  &__description {
+    margin-top: .8rem;
+    text-align: center;
+    color: $color-gray-dark;
+    font-size: $default-font-size;
+  }
+}
