@@ -1,5 +1,5 @@
 .project {
-  flex: 1 1 36.7rem;
+  flex: 0 0 36.7rem;
   height: 27rem;
   background-color: $color-gray;
   border-radius: $project-radius;
@@ -7,29 +7,42 @@
   cursor: pointer;
   opacity: 1;
   visibility: visible;
+  transition: .2s ease;
 
   &--1 {
-    // Project image
+    background-image: url("https://picsum.photos/200/300");
+    background-size: cover;
+    background-position: center;
   }
 
   &--2 {
-    // Project image
+    background-image: url("https://picsum.photos/200/100");
+    background-size: cover;
+    background-position: center;
   }
 
   &--3 {
-    // Project image
+    background-image: url("https://picsum.photos/400/300");
+    background-size: cover;
+    background-position: center;
   }
 
   &--4 {
-    // Project image
+    background-image: url("https://picsum.photos/350/300");
+    background-size: cover;
+    background-position: center;
   }
 
   &--5 {
-    // Project image
+    background-image: url("https://picsum.photos/420/250");
+    background-size: cover;
+    background-position: center;
   }
 
   &--6 {
-    // Project image
+    background-image: url("https://picsum.photos/130/200");
+    background-size: cover;
+    background-position: center;
   }
 
   &--hidden {
