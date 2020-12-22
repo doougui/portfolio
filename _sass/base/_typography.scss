@@ -16,6 +16,10 @@ body {
   font-size: $title-font-size;
   color: $color-primary;
   font-weight: 700;
+
+  &--secondary-color {
+    color: $color-secondary;
+  }
 }
 
 .heading-secondary {

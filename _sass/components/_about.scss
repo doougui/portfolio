@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  &__content {
+    margin-left: 8rem;
+  }
+
+  &__description {
+    margin-top: 2rem;
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 7;
+    margin-left: 10rem;
+
+    &::before {
+      content: '';
+      background-color: $color-secondary;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 3.4rem;
+      top: 3.2rem;
+      border-radius: $about-me-picture-radius;
+      z-index: 6;
+    }
+  }
+
+  &__img {
+    width: 57rem;
+    border-radius: $about-me-picture-radius;
+    position: relative;
+    z-index: 7;
+  }
+}
