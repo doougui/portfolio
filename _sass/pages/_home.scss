@@ -21,6 +21,16 @@
 }
 
 .about-section {
-  background-color: $color-gray-lightest;
+  background-color: $color-gray-lighter;
   height: 75.2rem;
+}
+
+.clients {
+  margin-bottom: 7rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
