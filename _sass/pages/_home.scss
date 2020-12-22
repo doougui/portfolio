@@ -12,4 +12,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  &__button {
+    display: block;
+    margin: 4.5rem 0 6rem 0;
+    text-align: center;
+  }
 }
