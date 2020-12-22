@@ -32,5 +32,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.services-section {
+  background-color: $color-gray-lightest;
+  padding: 2rem 0 8rem 0;
+}
+
+.services {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
