@@ -3,21 +3,24 @@
  * See more in: https://twitter.com/JoshWComeau/status/1339696520388628483
  */
 .button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
   &__aesthetic,
   &:link &__aesthetic,
   &:visited &__aesthetic {
     color: $color-white;
     font-size: $normal-font-size;
     background-color: $color-primary;
-    padding: 1.4rem 1.2rem;
+    padding: 1.5rem 1.2rem;
     min-width: 20rem;
     text-align: center;
     line-height: 1;
     border-radius: $btn-radius;
     box-shadow: $btn-shadow;
     font-weight: 700;
-    border: none;
-    cursor: pointer;
     transition: all .2s;
     display: inline-block;
     text-transform: uppercase;
@@ -32,6 +35,11 @@
       background-color: transparent;
       border: .1rem solid $color-primary;
       color: $color-primary;
+      padding: 1.4rem 1.2rem;
+    }
+
+    &--small {
+      min-width: 17rem;
     }
   }
 
