@@ -20,6 +20,10 @@ body {
   &--secondary-color {
     color: $color-secondary;
   }
+
+  &--big {
+    font-size: $big-title-font-size;
+  }
 }
 
 .heading-secondary {
