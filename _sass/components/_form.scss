@@ -1,0 +1,46 @@
+.form {
+  max-width: 70rem;
+  margin: 0 auto;
+
+  &__input-group {
+    width: 100%;
+    padding: 1.5rem;
+    flex: 1;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    display: block;
+    color: $color-gray-dark;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+
+  &__control {
+    width: 100%;
+    border-radius: $input-radius;
+    border: .1rem solid $color-gray-dark;
+    font-family: inherit;
+    font-size: $normal-font-size;
+    line-height: $default-line-height;
+    color: $color-gray-darker;
+    padding: 1rem;
+    margin-top: .3rem;
+    outline: none;
+    transition: all .25s;
+    resize: none;
+
+    &:focus {
+      border: .1rem solid $color-primary;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
