@@ -15,9 +15,12 @@
 @import "components/about";
 @import "components/client";
 @import "components/service";
+@import "components/form";
 
 @import "layout/navigation";
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/404";
+@import "pages/thanks";
