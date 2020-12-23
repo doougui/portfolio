@@ -1,0 +1,22 @@
+.footer {
+  &__line {
+    width: 100%;
+    height: 3rem;
+    background-color: $color-primary;
+  }
+
+  &__content {
+    width: 100%;
+    height: 10.8rem;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright {
+    font-size: $normal-font-size;
+    color: $color-white;
+    font-weight: 200;
+  }
+}
