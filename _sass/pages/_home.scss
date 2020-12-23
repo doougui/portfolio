@@ -47,3 +47,26 @@
     flex-wrap: wrap;
   }
 }
+
+.social-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+
+  &__item,
+  &__item:link,
+  &__item:visited {
+    color: $color-gray-dark;
+    font-size: $normal-font-size;
+    transition: all .25s;
+
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
