@@ -14,3 +14,5 @@ function setMenuPosition() {
     return navElement.classList.add('navigation--small');
   });
 }
+
+setMenuPosition();
