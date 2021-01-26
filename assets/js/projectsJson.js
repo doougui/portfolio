@@ -5,7 +5,9 @@ const projectsJson = [
     image: "/assets/img/lis.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Websites",
-    categoryKey: "websites"
+    categoryKey: "websites",
+    demo: "#",
+    code: "#",
   },
   {
     id: 2,
@@ -13,7 +15,9 @@ const projectsJson = [
     image: "/assets/img/forum.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Sistemas",
-    categoryKey: "applications"
+    categoryKey: "applications",
+    demo: "#",
+    code: "#",
   },
   {
     id: 3,
@@ -21,7 +25,9 @@ const projectsJson = [
     image: "/assets/img/traveler.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Websites",
-    categoryKey: "websites"
+    categoryKey: "websites",
+    demo: "#",
+    code: "#",
   },
   {
     id: 4,
@@ -29,7 +35,9 @@ const projectsJson = [
     image: "/assets/img/hearless.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Outros",
-    categoryKey: "misc"
+    categoryKey: "misc",
+    demo: "#",
+    code: "#",
   },
   {
     id: 5,
@@ -37,7 +45,9 @@ const projectsJson = [
     image: "/assets/img/kojima.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Outros",
-    categoryKey: "misc"
+    categoryKey: "misc",
+    demo: "#",
+    code: "#",
   },
   {
     id: 6,
@@ -45,6 +55,8 @@ const projectsJson = [
     image: "/assets/img/humbleprice.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Sistemas",
-    categoryKey: "applications"
+    categoryKey: "applications",
+    demo: "#",
+    code: "#",
   }
 ];

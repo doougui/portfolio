@@ -5,41 +5,15 @@
 const projectFilters = $l('button[data-filter]');
 const projects = $l('.project');
 
-function changeProjectDisplay(project, display) {
-  const transitionDuration = parseFloat(getComputedStyle(project)['transitionDuration']) * 1000;
-
-  setTimeout(function () {
-    project.style.display = display;
-  }, transitionDuration);
-}
-
-function toggleProjectVisibility(project) {
-  project.classList.toggle('project--hidden');
-}
-
-function hideProject(project) {
-  if (!project.classList.contains('project--hidden')) {
-    toggleProjectVisibility(project);
-    changeProjectDisplay(project, 'none');
-  }
-}
-
-function showProject(project) {
-  if (project.classList.contains('project--hidden')) {
-    toggleProjectVisibility(project);
-    changeProjectDisplay(project, 'block');
-  }
-}
-
 function showRelatedProjectsOnly(el) {
   const filter = el.getAttribute('data-filter') || 'all';
 
   projects.forEach(item => {
     if (filter !== 'all' && item.getAttribute('data-category') !== filter) {
-      return hideProject(item);
+      return hideItem(item, 'project');
     }
 
-    return showProject(item);
+    return showItem(item, 'project');
   });
 }
 
