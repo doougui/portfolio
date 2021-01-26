@@ -59,6 +59,13 @@ a {
 }
 
 /**
+ * Hiding models used for JavaScript manipulation
+ */
+.models {
+  display: none;
+}
+
+/**
  * Changing colors for text selection
  */
 ::selection {
