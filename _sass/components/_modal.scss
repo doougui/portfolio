@@ -5,32 +5,46 @@
   top: 0;
   left: 0;
   background-color: rgba($color-black, .3);
-  z-index: 11;
-  opacity: 1;
-  visibility: visible;
   transition: .2s ease-in-out;
+  display: none;
   justify-content: center;
   align-items: center;
+  z-index: 11;
 
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
-  &--hidden {
-    visibility: hidden;
-    opacity: 0;
+  &--visible {
+    display: flex;
   }
 
   &__content {
-    width: 50%;
+    flex: 0 1 68rem;
     height: 80vh;
     background-color: $color-white;
     overflow-y: scroll;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
     border-radius: $modal-radius;
-    transition: all .4s .2s;
+    transition: all .2s ease-in-out;
     position: relative;
+  }
+
+  @keyframes modal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &--visible &__content {
+    animation: modal .3s forwards;
   }
 
   &__text {

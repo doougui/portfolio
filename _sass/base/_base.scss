@@ -38,6 +38,13 @@ body {
 }
 
 /**
+ * Prevent body scroll when modal is open
+ */
+.noscroll {
+  overflow: hidden;
+}
+
+/**
  * Link reset
  */
 a {
