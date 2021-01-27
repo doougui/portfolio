@@ -3,14 +3,15 @@
     text-align: center;
     margin-bottom: 2.5rem;
 
-    .button:not(:last-child) {
-      margin-right: 1.5rem;
+    .button {
+      margin: .75rem;
     }
   }
 
   &__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__button {

@@ -62,15 +62,19 @@
   &__items {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
   }
 
   &__item {
-    margin-right: 3.5rem;
     font-size: $small-font-size;
     font-weight: 700;
     color: $color-primary;
     display: flex;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
   }
 
   &__link {

@@ -63,6 +63,10 @@ a {
 [class$="container"] {
   max-width: $container;
   margin: 0 auto;
+
+  @include respond(tab-land) {
+    padding: 0 1.7rem;
+  }
 }
 
 /**
