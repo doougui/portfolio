@@ -10,11 +10,14 @@
     height: 10.8rem;
     background-color: $color-secondary;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  &__copyright {
+  &__copyright,
+  &__copyright:link,
+  &__copyright:visited {
     font-size: $normal-font-size;
     color: $color-white;
     font-weight: 200;

@@ -4,6 +4,8 @@
 $color-primary: #107BEB;
 $color-secondary: #3F3D56;
 
+$color-error: #eb4034;
+
 $color-gray-lightest: #FBFBFB;
 $color-gray-lighter: #F5F5F5;
 $color-gray-light: #e3e2ef;
@@ -35,11 +37,14 @@ $input-radius: .7rem;
 $project-radius: 1.5rem;
 $client-radius: 1.5rem;
 
+$modal-radius: .3rem;
+
 $about-me-picture-radius: 5rem 0 0 5rem;
 
 /**
  * Fonts
  */
+$tiny-font-size: 1.2rem;
 $small-font-size: 1.4rem;
 $normal-font-size: 1.6rem;
 $default-font-size: 1.8rem;

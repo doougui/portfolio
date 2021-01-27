@@ -1,0 +1,88 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, .3);
+  transition: .2s ease-in-out;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  &--visible {
+    display: flex;
+  }
+
+  &__content {
+    flex: 0 1 68rem;
+    height: 80vh;
+    background-color: $color-white;
+    overflow-y: scroll;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    border-radius: $modal-radius;
+    transition: all .2s ease-in-out;
+    position: relative;
+  }
+
+  &--visible &__content {
+    animation: fromTop .3s forwards;
+  }
+
+  &__text {
+    max-width: 80%;
+    margin: 1rem auto;
+    overflow-x: hidden;
+  }
+
+  &__title {
+    margin-top: 3rem;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__description {
+    margin-top: 1.5rem;
+    font-size: $normal-font-size;
+  }
+
+  &__category {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  &__btns {
+    margin: 3rem 0 4rem 0;
+    display: flex;
+    justify-content: flex-start;
+
+    .button:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  &__close {
+    font-size: $default-font-size;
+    position: absolute;
+    color: $color-white;
+    z-index: 12;
+    cursor: pointer;
+    background-color: $color-error;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}

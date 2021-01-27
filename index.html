@@ -25,14 +25,7 @@ layout: home
                 </button>
             </div>
 
-            <div class="projects__container">
-                <div class="project project--1" data-category="websites"></div>
-                <div class="project project--2" data-category="applications"></div>
-                <div class="project project--3" data-category="websites"></div>
-                <div class="project project--4" data-category="misc"></div>
-                <div class="project project--5" data-category="misc"></div>
-                <div class="project project--6" data-category="applications"></div>
-            </div>
+            <div class="projects__container"></div>
         </div>
 
         <a href="https://github.com/doougui" target="_blank" rel="noopener" class="button projects__button">
@@ -108,10 +101,11 @@ layout: home
                 <div class="paragraph service__info">
                     <h3 class="heading-tertiary">Responsivo</h3>
                     <div class="paragraph service__description">
-                        Well-designed, user-friendly websites that help you get results help you get results
+                        Well-designed, user-friendly <strong>websites</strong> that help you get results help you get results
                     </div>
                 </div>
             </div>
+
             <div class="service">
                 <div class="service__icon">
                     <i class="fas fa-search"></i>
@@ -124,6 +118,7 @@ layout: home
                     </div>
                 </div>
             </div>
+
             <div class="service">
                 <div class="service__icon">
                     <i class="fas fa-chart-line"></i>
@@ -136,6 +131,7 @@ layout: home
                     </div>
                 </div>
             </div>
+
             <div class="service">
                 <div class="service__icon">
                     <i class="fas fa-store"></i>
@@ -196,3 +192,26 @@ layout: home
     </div>
 </section>
 
+<div class="modal" id="modal">
+    <div class="modal__content">
+        <div class="modal__close">&times;</div>
+        <div class="modal__image">
+            <img src="#" alt="---" class="modal__img">
+        </div>
+        <div class="modal__text">
+            <h1 class="heading-quaternary modal__title">---</h1>
+            <p class="modal__description paragraph">
+              ---
+            </p>
+            <p class="modal__category info">---</p>
+            <div class="modal__btns">
+                <a href="#" class="modal__code button" target="_blank" rel="noopener">
+                    <span class="button__aesthetic button__aesthetic--outline">Código</span>
+                </a>
+                <a href="#" class="modal__demo button" target="_blank" rel="noopener">
+                    <span class="button__aesthetic">Demonstração &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

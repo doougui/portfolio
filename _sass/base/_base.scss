@@ -38,6 +38,13 @@ body {
 }
 
 /**
+ * Prevent body scroll when modal is open
+ */
+.noscroll {
+  overflow: hidden;
+}
+
+/**
  * Link reset
  */
 a {
@@ -56,6 +63,13 @@ a {
 [class$="container"] {
   max-width: $container;
   margin: 0 auto;
+}
+
+/**
+ * Hiding models used for JavaScript manipulation
+ */
+.models {
+  display: none;
 }
 
 /**

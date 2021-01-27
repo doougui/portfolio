@@ -5,49 +5,15 @@
   border-radius: $project-radius;
   margin: .75rem;
   cursor: pointer;
-  opacity: 1;
-  visibility: visible;
-  transition: .2s ease;
-
-  &--1 {
-    background-image: url("https://picsum.photos/200/300");
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--2 {
-    background-image: url("https://picsum.photos/200/100");
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--3 {
-    background-image: url("https://picsum.photos/400/300");
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--4 {
-    background-image: url("https://picsum.photos/350/300");
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--5 {
-    background-image: url("https://picsum.photos/420/250");
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--6 {
-    background-image: url("https://picsum.photos/130/200");
-    background-size: cover;
-    background-position: center;
-  }
+  display: block;
+  animation: fromTop .3s forwards;
+  transition: .2s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &--hidden {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
   }
 }
 
