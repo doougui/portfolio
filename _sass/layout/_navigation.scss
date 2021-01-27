@@ -66,14 +66,27 @@
 
     @include respond(tab-port) {
       position: absolute;
-      display: flex;
       flex-direction: column;
       align-items: flex-end;
-      right: 1.8rem;
-      text-align: right;
+      right: 0;
       padding: 1.7rem;
       border-radius: $btn-radius;
       background: white;
+      z-index: 200;
+    }
+  }
+
+  .js &__items {
+    @include respond(tab-port) {
+      display: none;
+      margin-right: 2rem;
+    }
+
+    &--active {
+      @include respond(tab-port) {
+        display: flex;
+        animation: fromRight .3s forwards;
+      }
     }
   }
 
@@ -88,7 +101,6 @@
       margin-right: 3.5rem;
       
       @include respond(tab-port) {
-        // display: none;
         margin: .7rem 0;
         text-transform: uppercase;
         font-weight: 300;

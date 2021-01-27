@@ -4,13 +4,17 @@
   width: 27px;
   height: 2px;
 
-  .js &__wrapper {
+  &__wrapper {
     padding: 2rem;
     cursor: pointer;
     display: none;
 
     @include respond(tab-port) {
       display: block;
+    }
+
+    &--active {
+      // turn into a X
     }
   }
 
