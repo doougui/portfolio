@@ -66,6 +66,21 @@ a {
 }
 
 /**
+ * Class used to animate window on scroll
+ * .js class is used to avoid this behaviour if javascript is disabled
+ */
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/**
  * Hiding models used for JavaScript manipulation
  */
 .models {
