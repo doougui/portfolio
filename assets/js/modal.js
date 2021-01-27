@@ -13,28 +13,26 @@ if (modalContainer && modalClose) {
     $('.modal__demo').href = projectsJson[key].demo;
   }
 
+  function toggleModal(e) {
+    e.preventDefault();
+
+    modalContainer.classList.toggle('modal--visible');
+    body.classList.toggle('noscroll');
+  }
+
   function openModal(e) {
     e.preventDefault();
 
     const key = e.target.getAttribute('data-key');
 
     setModalData(key);
-
-    modalContainer.classList.add('modal--visible');
-    body.classList.add('noscroll');
-  }
-
-  function closeModal(e) {
-    e.preventDefault();
-
-    modalContainer.classList.remove('modal--visible');
-    body.classList.remove('noscroll');
+    toggleModal(e);
   }
 
   function outsideModalClick(e) {
-    if (e.target === this) closeModal(e);
+    if (e.target === this) toggleModal(e);
   }
 
-  modalClose.addEventListener('click', closeModal);
+  modalClose.addEventListener('click', toggleModal);
   modalContainer.addEventListener('click', outsideModalClick);
 }
