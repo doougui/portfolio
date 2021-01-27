@@ -1,13 +1,17 @@
 .burger {
   position: relative;
-  display: block;
   background: $color-primary;
-  width: 2.7rem;
-  height: .2rem;
-  
-  &__wrapper {
+  width: 27px;
+  height: 2px;
+
+  .js &__wrapper {
     padding: 2rem;
     cursor: pointer;
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+    }
   }
 
   &::before,
@@ -15,18 +19,18 @@
     content: '';
     background: $color-primary;
     display: block;
-    height: .2rem;
+    height: 2px;
     position: absolute;
     right: 0;
   }
 
   &::before {
     width: 100%;
-    top: -.7rem;
+    top: -7px;
   }
 
   &::after {
-    width: 2rem;
-    bottom: -.7rem;
+    width: 20px;
+    bottom: -7px;
   }
 }

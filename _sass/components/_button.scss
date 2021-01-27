@@ -29,6 +29,25 @@
       text-transform: initial;
       font-size: $small-font-size;
       padding: 1.2rem 0;
+
+      span {
+        @include respond(tab-port) {
+          display: none;
+        }
+      }
+
+      @include respond(tab-port) {
+        margin: .7rem 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: $big-font-size;
+        color: $color-primary;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        text-align: right;
+        min-width: auto;
+      }
     }
 
     &--outline {
