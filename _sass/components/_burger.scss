@@ -1,0 +1,32 @@
+.burger {
+  position: relative;
+  display: block;
+  background: $color-primary;
+  width: 2.7rem;
+  height: .2rem;
+  
+  &__wrapper {
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    background: $color-primary;
+    display: block;
+    height: .2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  &::before {
+    width: 100%;
+    top: -.7rem;
+  }
+
+  &::after {
+    width: 2rem;
+    bottom: -.7rem;
+  }
+}

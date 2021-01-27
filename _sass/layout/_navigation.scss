@@ -72,6 +72,9 @@
     display: flex;
     align-items: center;
 
+    // temp
+    display: none;
+
     &:not(:last-child) {
       margin-right: 3.5rem;
     }
