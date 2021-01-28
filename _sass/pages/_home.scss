@@ -30,7 +30,7 @@
 }
 
 .clients {
-  margin-bottom: 7rem;
+  padding-bottom: 7rem;
 
   &__container {
     display: flex;
@@ -40,8 +40,12 @@
   }
 }
 
-.services-section {
+.clients-section {
   background-color: $color-gray-lightest;
+}
+
+.services-section {
+  background-color: $color-white;
   padding: 2rem 0 8rem 0;
 }
 

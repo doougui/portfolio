@@ -71,11 +71,12 @@
     list-style: none;
     align-items: center;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       left: 50%;
       right: 0;
       transform: translateX(-50%);
       justify-content: center;
+      width: 100%;
     }
 
     &::before {
@@ -85,14 +86,22 @@
       height: .1rem;
       background-color: $color-gray-light;
       margin-right: 4rem;
+      position: relative;
 
-      @include respond(tab-port) {
-        display: none;
+      @include respond(phone) {
+        position: absolute;
+        width: 100vw;
+        z-index: 12;
       }
     }
 
     &-item {
       padding: 0 1rem;
+
+      @include respond(phone) {
+        z-index: 13;
+        background-color: $color-white;
+      }
     }
 
     &-img {
