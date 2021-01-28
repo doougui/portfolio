@@ -1,12 +1,15 @@
 const menuButton = $('.burger__wrapper');
 const menuList = $('.navigation__items');
+const menuItems = $l('.navigation__item');
 
 function openMenu(e) {
   menuButton.classList.toggle('burger__wrapper--active');
   menuList.classList.toggle('navigation__items--active');
 }
 
-menuButton.addEventListener('click', openMenu);
+[menuButton, ...menuItems].forEach(item => {
+  item.addEventListener('click', openMenu);
+});
 
 outsideClick(menuList, _ => {
   menuButton.classList.remove('burger__wrapper--active');
@@ -18,12 +21,7 @@ function outsideClick(element, callback) {
   html.addEventListener('click', handleOutsideClick);
 
   function handleOutsideClick(e) {
-    if (
-      (
-        !element.contains(e.target)  // Se o elemento clicado não for filho do nav items
-        && !menuButton.contains(e.target) // Se o elemento clicado não for filho do hamburger
-      ) 
-    ) {
+    if (!element.contains(e.target) && !menuButton.contains(e.target)) {
       callback();
     }
   }
