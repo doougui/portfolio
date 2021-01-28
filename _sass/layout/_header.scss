@@ -12,20 +12,55 @@
     position: relative;
   }
 
+  &__info {
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   &__description {
     max-width: 47rem;
+
+    @include respond(tab-port) {
+      max-width: 44rem;
+      margin: 3rem auto;
+    }
   }
 
   &__buttons {
     margin-top: 3rem;
 
+    a {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+
+      @include respond(tab-port) {
+        display: block;
+      }
+    }
+
     a:not(:last-child) {
       margin-right: 1.5rem;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__imgs {
+    @include respond(tab-port) {
+      display: none;
     }
   }
 
   &__img {
     width: 59.2rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__social {
@@ -36,6 +71,13 @@
     list-style: none;
     align-items: center;
 
+    @include respond(tab-port) {
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+      justify-content: center;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -43,6 +85,10 @@
       height: .1rem;
       background-color: $color-gray-light;
       margin-right: 4rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     &-item {
