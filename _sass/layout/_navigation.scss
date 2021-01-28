@@ -69,8 +69,9 @@
       flex-direction: column;
       align-items: flex-end;
       right: 0;
-      padding: 1.7rem;
-      border-radius: $btn-radius;
+      padding: 3.7rem;
+      padding-top: 1.7rem;
+      border-bottom-left-radius: $menu-mobile-radius;
       background: white;
       z-index: 200;
     }
@@ -79,7 +80,6 @@
   .js &__items {
     @include respond(tab-port) {
       display: none;
-      margin-right: 2rem;
     }
 
     &--active {

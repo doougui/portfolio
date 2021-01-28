@@ -3,6 +3,7 @@
   background: $color-primary;
   width: 27px;
   height: 2px;
+  transition: all .2s;
 
   &__wrapper {
     padding: 2rem;
@@ -11,10 +12,6 @@
 
     @include respond(tab-port) {
       display: block;
-    }
-
-    &--active {
-      // turn into a X
     }
   }
 
@@ -26,15 +23,31 @@
     height: 2px;
     position: absolute;
     right: 0;
+    transition: all .2s;
   }
 
   &::before {
     width: 100%;
-    top: -7px;
+    bottom: 7px;
   }
 
   &::after {
     width: 20px;
-    bottom: -7px;
+    top: 7px;
+  }
+
+  &__wrapper--active & {
+    transform: rotate(45deg);
+  }
+
+  &__wrapper--active &::before {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  &__wrapper--active &::after {
+    width: 100%;
+    transform: rotate(-90deg);
+    top: 0;
   }
 }
