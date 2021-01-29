@@ -37,6 +37,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
