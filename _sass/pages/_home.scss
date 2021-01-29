@@ -71,6 +71,7 @@
 .social-contact {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 3rem;
   margin-bottom: 7rem;
 
@@ -80,6 +81,7 @@
     color: $color-gray-dark;
     font-size: $normal-font-size;
     transition: all .25s;
+    margin-bottom: 1rem;
 
     &:not(:last-child) {
       margin-right: 3.5rem;

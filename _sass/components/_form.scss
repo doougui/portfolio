@@ -3,9 +3,9 @@
   margin: 0 auto;
 
   &__input-group {
-    width: 100%;
+    flex: 1 0 30rem;
     padding: 1.5rem;
-    flex: 1;
+
   }
 
   &__row {
