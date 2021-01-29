@@ -6,10 +6,39 @@
 
   &__content {
     margin-left: 8rem;
+
+    @include respond(tab-port) {
+      margin: 0 4rem;
+      color: $color-white;
+    }
+
+    .heading-primary {
+      @include respond(tab-port) {
+        color: inherit;
+      }
+    }
   }
 
   &__description {
     margin-top: 2rem;
+    font-size: $big-font-size;
+    line-height: $big-line-height;
+    font-weight: 300;
+    color: inherit;
+
+    span {
+      @include respond(tab-land) {
+        display: none;
+      }
+      
+      @include respond(tab-port) {
+        display: block;
+      }
+      
+      @include respond(phone) {
+        display: none;
+      }
+    }
   }
 
   &__photo {
@@ -28,6 +57,10 @@
       border-radius: $about-me-picture-radius;
       z-index: 6;
     }
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__img {
@@ -35,5 +68,9 @@
     border-radius: $about-me-picture-radius;
     position: relative;
     z-index: 7;
+
+    @include respond(tab-land) {
+      width: 45rem;
+    }
   }
 }

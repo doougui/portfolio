@@ -26,7 +26,11 @@
 
 .about-section {
   background-color: $color-gray-lighter;
-  height: 75.2rem;
+  padding: 9.6rem 0;
+
+  @include respond(tab-port) {
+    background-color: $color-secondary;
+  }
 }
 
 .clients {
