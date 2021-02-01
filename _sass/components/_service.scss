@@ -18,11 +18,10 @@
     justify-content: center;
     align-items: center;
     margin: 3rem;
+  }
 
-    i {
-      font-size: 6rem;
-      color: $color-primary;
-    }
+  &__image {
+    stroke: $color-primary;
   }
 
   &__description {
