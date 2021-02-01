@@ -42,7 +42,7 @@ const projectsJson = [
   {
     id: 5,
     name: "Kojima Tribute Page",
-    image: "./",
+    image: "./assets/img/lis.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Outros",
     categoryKey: "misc",

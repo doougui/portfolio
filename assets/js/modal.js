@@ -1,5 +1,6 @@
 const modalContainer = $('.modal');
 const modalClose = $('.modal__close');
+const modalGoBack = $('.modal__go-back');
 const body = $('body');
 
 if (modalContainer && modalClose) {
@@ -33,6 +34,8 @@ if (modalContainer && modalClose) {
     if (e.target === this) toggleModal(e);
   }
 
-  modalClose.addEventListener('click', toggleModal);
+  [modalClose, modalGoBack].forEach(item => {
+    item.addEventListener('click', toggleModal);
+  });
   modalContainer.addEventListener('click', outsideModalClick);
 }

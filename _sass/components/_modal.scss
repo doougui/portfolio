@@ -11,6 +11,11 @@
   align-items: center;
   z-index: 11;
 
+  @include respond(phone) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -29,10 +34,20 @@
     border-radius: $modal-radius;
     transition: all .2s ease-in-out;
     position: relative;
+
+    @include respond(phone) {
+      flex: 0 0 100vw;
+      min-height: 100vh;
+    }
   }
 
   &--visible &__content {
     animation: fromTop .3s forwards;
+
+    @include respond(phone) {
+      animation: fromRight .3s forwards;
+      position: relative;
+    }
   }
 
   &__text {
@@ -59,13 +74,31 @@
     margin-top: 1rem;
   }
 
-  &__btns {
+  &__btns-main {
     margin: 3rem 0 4rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+
+    @include respond(phone-small) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .button:not(:first-child) {
       margin-left: 1rem;
+
+      @include respond(phone-small) {
+        margin-left: 0;
+      }
+    }
+
+    .button {
+      margin-bottom: 1.5rem;
+
+      @include respond(phone-small) {
+        display: block;
+      }
     }
   }
 
@@ -84,5 +117,24 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+
+    @include respond(phone) {
+      width: 3.5rem;
+      height: 3.5rem;
+      font-size: $big-font-size;
+    }
+  }
+
+  &__go-back {
+    font-size: $big-font-size;
+    color: $color-secondary;
+    margin-top: auto;
+    padding: 1.5rem;
+    display: none;
+    text-align: center;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 }
