@@ -2,7 +2,7 @@ export const projectsJson = [
   {
     id: 1,
     name: "Life is Strange Fan Made Website",
-    image: "./",
+    image: "./assets/img/lis.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Websites",
     categoryKey: "websites",
@@ -11,8 +11,8 @@ export const projectsJson = [
   },
   {
     id: 2,
-    name: "Fórum",
-    image: "./",
+    name: "Clinica São Judas Tadeu",
+    image: "./assets/img/clinicasjt.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Sistemas",
     categoryKey: "applications",
@@ -22,7 +22,7 @@ export const projectsJson = [
   {
     id: 3,
     name: "Traveler",
-    image: "./",
+    image: "./assets/img/traveler.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Websites",
     categoryKey: "websites",
@@ -31,8 +31,8 @@ export const projectsJson = [
   },
   {
     id: 4,
-    name: "Hearless",
-    image: "./",
+    name: "Module Ambientes",
+    image: "./assets/img/moduleambientes.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Outros",
     categoryKey: "misc",
@@ -42,7 +42,7 @@ export const projectsJson = [
   {
     id: 5,
     name: "Kojima Tribute Page",
-    image: "./assets/img/lis.png",
+    image: "./assets/img/kojima.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Outros",
     categoryKey: "misc",
@@ -52,7 +52,7 @@ export const projectsJson = [
   {
     id: 6,
     name: "Humbleprice",
-    image: "./",
+    image: "./assets/img/humbleprice.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
     category: "Sistemas",
     categoryKey: "applications",
