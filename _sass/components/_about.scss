@@ -41,17 +41,6 @@
     }
   }
 
-  &__contact,
-  &__contact:link,
-  &__contact:visited {
-    color: $color-primary;
-    display: inline-block;
-    
-    &:hover {
-      animation: scale .8s infinite;
-    }
-  }
-
   &__photo {
     position: relative;
     z-index: 7;
