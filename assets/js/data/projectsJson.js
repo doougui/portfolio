@@ -1,4 +1,4 @@
-const projectsJson = [
+export const projectsJson = [
   {
     id: 1,
     name: "Life is Strange Fan Made Website",
