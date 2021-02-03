@@ -55,12 +55,12 @@
 
     &--outline {
       background-color: transparent;
-      border: .1rem solid $color-primary;
+      border: 1px solid $color-primary;
       color: $color-primary;
       padding: 1.4rem 1.2rem;
 
       &-disabled {
-        border: .1rem solid $color-error;
+        border: 1px solid $color-error;
         color: $color-error;
       }
     }
@@ -72,7 +72,7 @@
 
   &:not(.disabled):hover &__aesthetic,
   &:not(.disabled):focus &__aesthetic {
-    transform: translateY(-.2rem);
-    box-shadow: 0 .1.5rem .25rem rgba($color-black, .2);
+    transform: translateY(-2px);
+    box-shadow: 0 .15rem .25rem rgba($color-black, .2);
   }
 }

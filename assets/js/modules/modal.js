@@ -9,6 +9,35 @@ export default function initModal() {
   const projectItems = $l('.projects__container .project');
   
   if (modalContainer && modalClose) {
+    function setFunFact(key) {
+      if (projectsJson[key].funFact) {
+        $('.accordion').style.display = 'block';
+        $('.accordion__content').innerHTML = projectsJson[key].funFact;
+        return;
+      }
+
+      $('.accordion').style.display = 'none';
+      return;
+    }
+
+    function setCodeVisibility(key) {
+      const modalCodeBtn = $('.modal__code');
+      const disabledClass = 'button__aesthetic--outline-disabled';
+      const outlineBtn = '.button__aesthetic--outline';
+
+      if (projectsJson[key].privateCode) {
+        modalCodeBtn.classList.add('disabled');
+        modalCodeBtn.querySelector(outlineBtn).classList.add(disabledClass);
+        modalCodeBtn.querySelector(outlineBtn).textContent = 'Código privado';
+        return;
+      }
+
+      modalCodeBtn.classList.remove('disabled');
+      modalCodeBtn.querySelector(outlineBtn).classList.remove(disabledClass);
+      modalCodeBtn.querySelector(outlineBtn).textContent = 'Código';
+      return;
+    }
+
     function setModalData(key) {
       $('.modal__image img').src = projectsJson[key].image;
       $('.modal__image img').alt = projectsJson[key].name;
@@ -18,13 +47,8 @@ export default function initModal() {
       $('.modal__code').href = projectsJson[key].code;
       $('.modal__demo').href = projectsJson[key].demo;
 
-      if (projectsJson[key].funFact) {
-        $('.accordion').style.display = 'block';
-        $('.accordion__content').innerHTML = projectsJson[key].funFact;
-        return;
-      }
-
-      return $('.accordion').style.display = 'none';
+      setFunFact(key);
+      setCodeVisibility(key);
     }
   
     function toggleModal(e) {
