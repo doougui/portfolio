@@ -101,6 +101,15 @@ a {
 }
 
 /**
+ * Disabled things (like buttons or items)
+ */
+.disabled {
+  opacity: .7;
+  cursor: default;
+  pointer-events: none;
+}
+
+/**
  * Changing scrollbar style on supported browsers
  */
 ::-webkit-scrollbar {

@@ -5,8 +5,11 @@
 .button {
   background: none;
   border: none;
-  cursor: pointer;
   outline: none;
+
+  &:not(.disabled) {
+    cursor: pointer;
+  }
 
   &__aesthetic,
   &:link &__aesthetic,
@@ -55,6 +58,11 @@
       border: .1rem solid $color-primary;
       color: $color-primary;
       padding: 1.4rem 1.2rem;
+
+      &-private {
+        border: .1rem solid $color-error;
+        color: $color-error;
+      }
     }
 
     &--small {
@@ -62,8 +70,8 @@
     }
   }
 
-  &:hover &__aesthetic,
-  &:focus &__aesthetic {
+  &:not(.disabled):hover &__aesthetic,
+  &:not(.disabled):focus &__aesthetic {
     transform: translateY(-.2rem);
     box-shadow: 0 .1.5rem .25rem rgba($color-black, .2);
   }
