@@ -21,7 +21,7 @@ export const projectsJson = [
   {
     name: "Kojima Tribute Page",
     image: "./assets/img/kojima.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto exclusivamente front-end desenvolvido utilizando as tecnologias HTML5, CSS3, e jQuery. Desenvolvido como um exercício do curso <a href='https://b7web.com.br/' target='_blank' rel='noopneer' class='pulsate-link'>PHP do Zero ao Profissional</a>. Além de toda a revisão de conceitos mais básicos, neste projeto tive a oportunidade de aprimorar minhas habilidades com relação a posicionamento no CSS.",
     category: "Outros",
     categoryKey: "misc",
     demo: "https://doougui.github.io/kojima-tribute-page/",
@@ -30,7 +30,7 @@ export const projectsJson = [
   {
     name: "Module Ambientes",
     image: "./assets/img/moduleambientes.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto desenvolvido utilizando as tecnologias HTML5, CSS3, PHP, jQuery e Swiper para a construção dos <i>sliders</i>. Este foi um projeto comercial construído em parceria com a empresa <a class='pulsate-link' href='https://hesea.com.br/' target='_blank' rel='noopener'>Hesea</a>. Neste projeto tive a oportunidade de aprender coisas como a edição e otimização de imagens, aprimorando meus conhecimentos sobre performance e usabilidade.",
     category: "Outros",
     categoryKey: "misc",
     demo: "https://www.moduleambientes.com.br/",
@@ -39,16 +39,16 @@ export const projectsJson = [
   {
     name: "Traveler",
     image: "./assets/img/traveler.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto desenvolvido utilizando as tecnologias HTML5, CSS3, PHP, Bootstrap e WordPress. Neste projeto tive a oportunidade de colocar em prática a criação de temas e o gerenciamento de conteúdo utilizando o popular CMS WordPress. Além disso, realizei o aprimoramento da performance e responsividade do mesmo.",
     category: "Websites",
     categoryKey: "websites",
     demo: "#",
     code: "#",
   },
   {
-    name: "Clinica São Judas Tadeu",
+    name: "Clínica São Judas Tadeu",
     image: "./assets/img/clinicasjt.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto desenvolvido utilizando as tecnologias HTML5, CSS3, PHP, jQuery e Swiper para a construção dos <i>sliders</i>. Este foi um projeto comercial desenvolvido em parceria com a empresa <a class='pulsate-link' href='https://hesea.com.br/' target='_blank' rel='noopener'>Hesea</a>. A construção deste website tornou possível o aprimoramento das minhas habilidades relacionadas a <i>Design</i> (<i>UI/UX</i>), trazendo uma interface limpa e agradável para o usuário.",
     category: "Sistemas",
     categoryKey: "applications",
     demo: "#",
