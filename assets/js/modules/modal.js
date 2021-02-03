@@ -23,24 +23,26 @@ export default function initModal() {
     function setCodeVisibility(key) {
       const modalCodeBtn = $('.modal__code');
       const disabledClass = 'button__aesthetic--outline-disabled';
-      const outlineBtn = '.button__aesthetic--outline';
+      const outlineBtn = modalCodeBtn.querySelector('.button__aesthetic--outline');
 
       if (projectsJson[key].privateCode) {
         modalCodeBtn.classList.add('disabled');
-        modalCodeBtn.querySelector(outlineBtn).classList.add(disabledClass);
-        modalCodeBtn.querySelector(outlineBtn).textContent = 'Código privado';
+        outlineBtn.classList.add(disabledClass);
+        outlineBtn.textContent = 'Código privado';
         return;
       }
 
       modalCodeBtn.classList.remove('disabled');
-      modalCodeBtn.querySelector(outlineBtn).classList.remove(disabledClass);
-      modalCodeBtn.querySelector(outlineBtn).textContent = 'Código';
+      outlineBtn.classList.remove(disabledClass);
+      outlineBtn.textContent = 'Código';
       return;
     }
 
     function setModalData(key) {
-      $('.modal__image img').src = projectsJson[key].image;
-      $('.modal__image img').alt = projectsJson[key].name;
+      $('.modal__img-webp').srcset = projectsJson[key].image; // Optimized webp image
+      $('.modal__fallback-jpg').srcset = projectsJson[key].fallback; // Fallback for old browsers
+      $('.modal__fallback-img').src = projectsJson[key].fallback; // Fallback for old browsers
+      $('.modal__fallback-img').alt = projectsJson[key].name; // Img alt attribute
       $('.modal__text h1').innerHTML = projectsJson[key].name;
       $('.modal__description').innerHTML = projectsJson[key].description;
       $('.modal__category').innerHTML = projectsJson[key].category;

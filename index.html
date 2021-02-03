@@ -202,9 +202,11 @@ layout: home
 <div class="modal" id="modal">
   <div class="modal__content">
     <div class="modal__close">&times;</div>
-    <div class="modal__image">
-      <img src="#" alt="---" class="modal__img">
-    </div>
+    <picture>
+      <source srcset="---" class="modal__img-webp modal__img" type="image/webp">
+      <source srcset="---" class="modal__fallback-jpg modal__img" type="image/jpeg"> 
+      <img class="modal__fallback-img modal__img" src="---" alt="---">
+    </picture>
     <div class="modal__text">
       <div class="modal__title-wrapper">
         <h1 class="heading-quaternary modal__title">---</h1>

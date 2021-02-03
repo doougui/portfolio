@@ -10,8 +10,8 @@ export default function initProjectList() {
     
       projectItem.setAttribute('data-key', index);
       projectItem.setAttribute('data-category', item.categoryKey);
-      projectItem.style.backgroundImage = `url(${item.image})`;
-        
+      projectItem.style.backgroundImage = `url(${item.fallback})`;
+
       projectsContainer.append(projectItem);
     });
   }
