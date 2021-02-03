@@ -76,3 +76,16 @@ body {
   text-transform: uppercase;
   color: $color-primary;
 }
+
+.pulsate-link {
+  &,
+  &:link,
+  &:visited {
+    color: $color-primary;
+    display: inline-block;
+    
+    &:hover {
+      animation: scale .8s infinite;
+    }
+  }
+}
