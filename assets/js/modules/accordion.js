@@ -7,6 +7,7 @@ export default function initAccordion() {
     function toggleAccordion() {
       const visibleClass = 'accordion__content--visible';
       const hidingClass = 'accordion__content--hiding';
+      this.classList.toggle('accordion__opener--visible');
 
       if (this.nextElementSibling.classList.contains(visibleClass)) {
         this.nextElementSibling.classList.remove(visibleClass);

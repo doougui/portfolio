@@ -1,12 +1,27 @@
 .accordion {
   display: none;
 
-  &__opener,
-  &__opener:link,
-  &__opener:visited {
-    cursor: pointer;
-    font-size: $default-font-size;
-    margin: 1.5rem 0;
+  &__opener {
+    &,
+    &:link,
+    &:visited {
+      cursor: pointer;
+      font-size: $default-font-size;
+      margin: 1.5rem 0;
+    }
+
+    &::after {
+      content: '▼';
+      margin-left: 5px;
+    }
+
+    &--visible,
+    &--visible:link,
+    &--visible:visited {
+      &::after {
+        content: '▲';
+      }
+    }
   }
 
   &__content {
