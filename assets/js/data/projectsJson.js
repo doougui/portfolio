@@ -52,8 +52,8 @@ export const projectsJson = [
     category: "Websites",
     categoryKey: "websites",
     privateCode: false,
-    code: "#",
-    demo: "#",
+    code: "https://github.com/doougui/traveler",
+    demo: "https://travelerwp.000webhostapp.com/",
   },
   {
     name: "Clínica São Judas Tadeu",
@@ -64,6 +64,6 @@ export const projectsJson = [
     categoryKey: "applications",
     privateCode: true,
     code: "#",
-    demo: "#",
+    demo: "http://clinicasjt.unaux.com/",
   }
 ];

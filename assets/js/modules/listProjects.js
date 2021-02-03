@@ -10,7 +10,11 @@ export default function initProjectList() {
     
       projectItem.setAttribute('data-key', index);
       projectItem.setAttribute('data-category', item.categoryKey);
-      projectItem.style.backgroundImage = `url(${item.fallback})`;
+
+      const supportsWebp = document.documentElement.classList.contains('webp');
+      const image = supportsWebp ? item.image : item.fallback;
+
+      projectItem.style.backgroundImage = `url(${image})`;
 
       projectsContainer.append(projectItem);
     });
