@@ -17,6 +17,14 @@ export default function initModal() {
       $('.modal__category').innerHTML = projectsJson[key].category;
       $('.modal__code').href = projectsJson[key].code;
       $('.modal__demo').href = projectsJson[key].demo;
+
+      if (projectsJson[key].funFact) {
+        $('.accordion').style.display = 'block';
+        $('.accordion__content').innerHTML = projectsJson[key].funFact;
+        return;
+      }
+
+      return $('.accordion').style.display = 'none';
     }
   
     function toggleModal(e) {

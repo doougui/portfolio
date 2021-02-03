@@ -53,10 +53,10 @@
   &__text {
     max-width: 80%;
     margin: 1rem auto;
-    overflow-x: hidden;
   }
 
-  &__title {
+  &__title-wrapper {
+    overflow-x: hidden;
     margin-top: 3rem;
   }
 
@@ -64,7 +64,7 @@
     max-width: 100%;
   }
 
-  &__description {
+  &__description-wrapper {
     margin-top: 1.5rem;
     font-size: $normal-font-size;
   }

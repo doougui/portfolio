@@ -2,7 +2,7 @@ export const projectsJson = [
   {
     name: "Life is Strange Fan Made Website",
     image: "./assets/img/lis.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto exclusivamente front-end desenvolvido utilizando as tecnologias HTML5, CSS3 e Vanilla JavaScript utilizando as features das versões ES6+. Este projeto foi desenvolvido com foco na responsividade, acessibilidade, performance e design.",
     category: "Websites",
     categoryKey: "websites",
     demo: "https://doougui.github.io/life-is-strange-fan-made/",
@@ -11,7 +11,8 @@ export const projectsJson = [
   {
     name: "Humbleprice",
     image: "./assets/img/humbleprice.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta illum, labore maiores quos recusandae saepe totam ullam veritatis voluptate. Asperiores blanditiis hic ipsam magnam officia porro possimus sequi voluptas! Accusantium cupiditate non odit quas voluptatum! A aliquam cupiditate, eaque eius, expedita necessitatibus nobis nulla quos, repellat repellendus similique totam.",
+    description: "Projeto full-stack desenvolvido utilizando as tecnologias HTML5, CSS3, Bootstrap e jQuery para o front-end e PHP, utilizando como estrutura o padrão MVC, no back-end. Este projeto teve como principal objetivo aprimorar as minhas habilidades lógicas para a construção de um sistema complexo.",
+    funFact: "Este projeto também foi utilizado como meu Trabalho de Conclusão de Curso (TCC) no curso técnico que prestei na instituição CEDUP Diomício Freitas, sendo aprovado por todos os avaliadores com notas altíssimas que me levaram a aprovação.",
     category: "Sistemas",
     categoryKey: "applications",
     demo: "https://humbleprice.000webhostapp.com/",
