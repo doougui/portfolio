@@ -9,11 +9,16 @@
     margin: 1.5rem 0;
   }
 
-  .js &__content {
+  &__content {
     display: none;
-        
+
+    &--hiding {
+      animation: slideUp .3s;
+      display: block;
+    }
+
     &--visible {
-      animation: slideDown .3s backwards;
+      animation: slideDown .3s;
       display: block;
     }
   }

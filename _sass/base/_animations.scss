@@ -47,3 +47,15 @@
     max-height: 20rem;
   }
 }
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    max-height: 20rem;
+  }
+
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
