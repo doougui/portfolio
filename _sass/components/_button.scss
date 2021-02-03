@@ -59,7 +59,7 @@
       color: $color-primary;
       padding: 1.4rem 1.2rem;
 
-      &-private {
+      &-disabled {
         border: .1rem solid $color-error;
         color: $color-error;
       }
