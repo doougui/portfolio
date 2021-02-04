@@ -2,8 +2,33 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <meta name="google-site-verification" content="ukk6YIXeD3DO9eEeOj4EIl5E7FvcWhZa0bMA3p-lhlA" />
+  <title>{{ site.title }} | {{ site.tagline }}</title>
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta name="author" content="{{ site.author }}" />
+  <meta property="og:locale" content="{{ site.locale }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <link rel="canonical" href="{{ site.url }}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.site_name }}" />
+  <meta property="og:image" content="{{site.url}}/{{ site.image }}" />
+  <meta property="og:type" content="{{ page.type | site.type }}" />
+  <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary" }}" />
+  <meta property="twitter:title" content="{{ site.title }}" />
+  <meta property="twitter:image" content="{{ site.url }}/{{ page.image | default: site.image }}" />
+  <meta name="twitter:site" content="{{ site.twitter.username | prepend: '@' }}" />
+  <meta name="twitter:creator" content="{{ site.twitter.username | prepend: '@' }}" />
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}" />
+  {% endif %}
+  {% if paginator.next_page %}
+    <link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
+  {% endif %}
+  <script type="application/ld+json">
+    {"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{ site.url }}/{{ site.logo }}"},"name":"{{ site.author }}"},"headline":"{{ site.title }}","url":"{{ site.url }}","sameAs":[{% for link in site.social.links %}"{{ link }}"{% if link != site.social.links.last %},{% endif %}{% endfor %}],"name":"{{ site.social.name }}","author":{"@type":"Person","name":"{{ site.author }}"},"description":"{{ site.description }}","@context":"https://schema.org"}
+  </script>
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/favicon/favicon-32x32.png">
