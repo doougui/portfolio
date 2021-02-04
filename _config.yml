@@ -18,18 +18,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Douglas Goulart
+title: Portfólio de Desenvolvedor Web Full-Stack, especialista em JavaScript e PHP 
 email: douglaspigoulart@gmail.com
+tagline: Portfólio pessoal de programador web
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfólio de Desenvolvedor Web Full-Stack, especialista em JavaScript e PHP 
+  Portfólio pessoal de programador web full-stack
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: oDougui
+
+author: dpgoulart
+twitter_username: dpgoulart
 github_username:  doougui
+twitter:
+  username: dpgoulart
+  card: summary
+social:
+  name: Douglas Pinheiro Goulart
+  links:
+    - https://twitter.com/dpgoulart
+    - https://www.linkedin.com/in/douglaspigoulart/
+    - https://github.com/doougui
+    - https://instagram.com/devtype_code
+    - https://www.behance.net/douglaspinheir
+    - https://dribbble.com/DouglasPG
+    - https://stackoverflow.com/users/10859734/doougui
+logo: assets/img/logo.jpeg
+locale: pt_BR
 
 # Build settings
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
 # Exclude from processing.
