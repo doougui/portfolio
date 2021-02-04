@@ -23,7 +23,7 @@ email: douglaspigoulart@gmail.com
 tagline: Douglas Pinheiro Goulart
 site_name: douglasgoulart.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfólio pessoal de programador web full-stack
+  Portfólio pessoal de desenvolvedor web full-stack. Eu sou um programador front-end e back-end apaixonado por tecnologia. Confira meus projetos construídos ao longo da minha carreira e meu currículo profissional.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.douglasgoulart.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-JXNJJPCK3S
@@ -48,7 +48,7 @@ social:
     - https://dribbble.com/DouglasPG
     - https://stackoverflow.com/users/10859734/doougui
 logo: assets/img/logo.jpeg
-image: assets/img/logo.jpeg
+image: assets/img/portfolio.png
 locale: pt_BR
 
 # Build settings
