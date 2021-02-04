@@ -39,9 +39,9 @@ export default function initModal() {
     }
 
     function setModalData(key) {
-      $('.modal__img-webp').srcset = projectsJson[key].image; // Optimized webp image
-      $('.modal__fallback-jpg').srcset = projectsJson[key].fallback; // Fallback for old browsers
-      $('.modal__fallback-img').src = projectsJson[key].fallback; // Fallback for old browsers
+      $('.modal__img-webp').srcset = url + projectsJson[key].image; // Optimized webp image
+      $('.modal__fallback-jpg').srcset = url + projectsJson[key].fallback; // Fallback for old browsers
+      $('.modal__fallback-img').src = url + projectsJson[key].fallback; // Fallback for old browsers
       $('.modal__fallback-img').alt = projectsJson[key].name; // Img alt attribute
       $('.modal__text h1').innerHTML = projectsJson[key].name;
       $('.modal__description').innerHTML = projectsJson[key].description;

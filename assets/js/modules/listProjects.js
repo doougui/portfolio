@@ -12,7 +12,7 @@ export default function initProjectList() {
       projectItem.setAttribute('data-category', item.categoryKey);
 
       const supportsWebp = document.documentElement.classList.contains('webp');
-      const image = supportsWebp ? item.image : item.fallback;
+      const image = url + (supportsWebp ? item.image : item.fallback);
 
       projectItem.style.backgroundImage = `url(${image})`;
 
