@@ -4,21 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }} | {{ site.tagline }}</title>
   <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
-  <meta property="og:title" content="{{ page.title | default: site.title }}" />
   <meta name="author" content="{{ site.author }}" />
-  <meta property="og:locale" content="{{ site.locale }}" />
   <meta name="description" content="{{ site.description }}" />
-  <meta property="og:description" content="{{ site.description }}" />
   <link rel="canonical" href="{{ site.url }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:locale" content="{{ site.locale }}" />
+  <meta property="og:description" content="{{ site.description }}" />
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="{{ site.site_name }}" />
   <meta property="og:image" content="{{ site.url }}/{{ page.image.url | default: site.image.url }}" />
   <meta property="og:image:width" content="{{ page.image.width | default: site.image.width }}" />
   <meta property="og:image:height" content="{{ page.image.height | default: site.image.height }}" />
   <meta property="og:type" content="{{ page.type | site.type }}" />
-  <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary" }}" />
   <meta property="twitter:title" content="{{ site.title }}" />
   <meta property="twitter:image" content="{{ site.url }}/{{ page.image.url | default: site.image.url }}" />
+  <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary" }}" />
   <meta name="twitter:site" content="{{ site.twitter.username | prepend: '@' }}" />
   <meta name="twitter:creator" content="{{ site.twitter.username | prepend: '@' }}" />
   {% if paginator.previous_page %}
@@ -27,6 +27,11 @@
   {% if paginator.next_page %}
     <link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
   {% endif %}
+  <!-- Preload -->
+  <link rel="modulepreload" href="index.js" as="script">
+  <link rel="preload" href="{{ site.url }}{{ "/assets/main.css" | relative_url }}" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="preload" as="font">
+  <!-- End Preload-->
   <script type="application/ld+json">
     {"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{ site.url }}/{{ site.logo }}"},"name":"{{ site.author }}"},"headline":"{{ site.title }}","url":"{{ site.url }}","sameAs":[{% for link in site.social.links %}"{{ link }}"{% if link != site.social.links.last %},{% endif %}{% endfor %}],"name":"{{ site.social.name }}","author":{"@type":"Person","name":"{{ site.author }}"},"description":"{{ site.description }}","@context":"https://schema.org"}
   </script>
@@ -36,8 +41,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="{{ site.url }}/assets/img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="{{ site.url }}/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="mask-icon" href="{{ site.url }}/assets/img/favicon/safari-pinned-tab.svg" color="#107BEB">
+  <meta name="msapplication-TileColor" content="#3F3D56">
   <meta name="theme-color" content="#107BEB">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.url }}{{ "/assets/main.css" | relative_url }}">

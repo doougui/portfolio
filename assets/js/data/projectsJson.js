@@ -1,6 +1,6 @@
 export const projectsJson = [
   {
-    name: "Life is Strange Fan Made Website",
+    name: "Life is Strange Website",
     image: "/assets/img/lis.webp",
     fallback: "/assets/img/lis.jpg",
     description: "Projeto exclusivamente front-end desenvolvido utilizando as tecnologias HTML5, CSS3 e Vanilla JavaScript utilizando as features das versões ES6+. Este projeto foi desenvolvido com foco na responsividade, acessibilidade, performance e design.",
