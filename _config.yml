@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Portfólio pessoal de programador web full-stack
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.douglasgoulart.com" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: G-JXNJJPCK3S
 
 author: dpgoulart
 twitter_username: dpgoulart
