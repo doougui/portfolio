@@ -12,11 +12,13 @@
   <link rel="canonical" href="{{ site.url }}" />
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="{{ site.site_name }}" />
-  <meta property="og:image" content="{{site.url}}/{{ site.image }}" />
+  <meta property="og:image" content="{{ site.url }}/{{ page.image.url | default: site.image.url }}" />
+  <meta property="og:image:width" content="{{ page.image.width | default: site.image.width }}" />
+  <meta property="og:image:height" content="{{ page.image.height | default: site.image.height }}" />
   <meta property="og:type" content="{{ page.type | site.type }}" />
   <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary" }}" />
   <meta property="twitter:title" content="{{ site.title }}" />
-  <meta property="twitter:image" content="{{ site.url }}/{{ page.image | default: site.image }}" />
+  <meta property="twitter:image" content="{{ site.url }}/{{ page.image.url | default: site.image.url }}" />
   <meta name="twitter:site" content="{{ site.twitter.username | prepend: '@' }}" />
   <meta name="twitter:creator" content="{{ site.twitter.username | prepend: '@' }}" />
   {% if paginator.previous_page %}

@@ -48,7 +48,10 @@ social:
     - https://dribbble.com/DouglasPG
     - https://stackoverflow.com/users/10859734/doougui
 logo: assets/img/logo.jpeg
-image: assets/img/portfolio.png
+image:
+  url: assets/img/portfolio.png
+  width: 1365
+  height: 623
 locale: pt_BR
 
 # Build settings
