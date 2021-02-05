@@ -79,17 +79,17 @@
   margin-top: 3rem;
   margin-bottom: 7rem;
 
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+
   &__item,
   &__item:link,
   &__item:visited {
     color: $color-gray-dark;
     font-size: $normal-font-size;
     transition: all .25s;
-    margin-bottom: 1rem;
-
-    &:not(:last-child) {
-      margin-right: 3.5rem;
-    }
+    margin: 1rem 1.75rem ;
 
     &:hover {
       color: $color-secondary;

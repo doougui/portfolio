@@ -34,13 +34,14 @@ body {
 }
 
 .subtitle {
-  padding: 5rem 0;
+  padding: 5rem 1.75rem;
 
   &__description {
     margin-top: .8rem;
     text-align: center;
     color: $color-gray-dark;
     font-size: $default-font-size;
+    line-height: $default-line-height;
   }
 }
 
