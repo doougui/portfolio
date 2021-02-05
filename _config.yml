@@ -58,6 +58,7 @@ locale: pt_BR
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-gzip
 
 # Exclude from processing.
 # The following items will not be processed, by default.
