@@ -1,9 +1,20 @@
 import { $, $l } from '../utils/selectors.js';
+import { toggleElementClass } from '../utils/elementHelpers.js';
 
 export default function initProjectFilters() {
   const projectFilters = $l('button[data-filter]');
   const projects = $l('.projects__container .project');
+  const projectsContainer = $('.projects__container');
+  const noProjectsFound = $('.projects__notfound');
   
+  function toggleNoProjectsFoundMessage(hiddenProjects) {    
+    if (hiddenProjects.length === projects.length) {
+      return toggleElementClass(noProjectsFound, ['none'], ['block']);
+    }
+
+    return toggleElementClass(noProjectsFound, ['block'], ['none']);
+  }
+
   function showRelatedProjectsOnly(el) {
     const filter = el.getAttribute('data-filter') || 'all';
   
@@ -14,6 +25,10 @@ export default function initProjectFilters() {
   
       return item.classList.remove('project--hidden');
     });
+
+    const hiddenProjects = $l('.projects__container .project--hidden');
+
+    toggleNoProjectsFoundMessage(hiddenProjects);
   }
   
   function addOutlineClass() {
