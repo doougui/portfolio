@@ -56,14 +56,14 @@ export const projectsJson = [
     demo: "https://travelerwp.000webhostapp.com/",
   },
   {
-    name: "Clínica São Judas Tadeu",
-    image: "/assets/img/clinicasjt.webp",
-    fallback: "/assets/img/clinicasjt.jpg",
-    description: "Projeto desenvolvido utilizando as tecnologias HTML5, CSS3, PHP, jQuery e Swiper para a construção dos <i>sliders</i>. Este foi um projeto comercial desenvolvido em parceria com a empresa <a class='pulsate-link' href='https://hesea.com.br/' target='_blank' rel='noopener'>Hesea</a>. A construção deste website tornou possível o aprimoramento das minhas habilidades relacionadas a <i>Design</i> (<i>UI/UX</i>), trazendo uma interface limpa e agradável para o usuário.",
-    category: "Websites",
-    categoryKey: "websites",
-    privateCode: true,
-    code: "#",
-    demo: "http://clinicasjt.unaux.com/",
+    name: "Parakeet",
+    image: "/assets/img/parakeet.webp",
+    fallback: "/assets/img/parakeet.jpg",
+    description: "Projeto desenvolvido utilizando as tecnologias Laravel e MySQL. O desenvolvimento desta aplicação teve como principal objetivo aplicar na prática os conceitos fundamentais do framework Laravel. Nele foram aplicados coisas como migrations, file upload, database seeding, policies, entre outras coisas.",
+    category: "Sistemas",
+    categoryKey: "applications",
+    privateCode: false,
+    code: "https://github.com/doougui/parakeet",
+    demo: "http://parakeett.herokuapp.com/",
   }
 ];
