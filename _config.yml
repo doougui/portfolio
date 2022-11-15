@@ -21,11 +21,11 @@
 title: Portfólio de Desenvolvedor Web Full-Stack, especialista em JavaScript e PHP 
 email: douglaspigoulart@gmail.com
 tagline: Douglas Pinheiro Goulart
-site_name: douglasgoulart.com
+site_name: portfolio
 description: >- # this means to ignore newlines until "baseurl:"
   Portfólio pessoal de desenvolvedor web full-stack. Eu sou um programador front-end e back-end apaixonado por tecnologia. Confira meus projetos construídos ao longo da minha carreira e meu currículo profissional.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.douglasgoulart.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://doougui.github.io/portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-JXNJJPCK3S
 google_site_verification: ukk6YIXeD3DO9eEeOj4EIl5E7FvcWhZa0bMA3p-lhlA
 type: website
